@@ -9,7 +9,8 @@ SCRIPT_NAME = "Main.py"
 base = "Win32GUI" if sys.platform == "win32" else None
 executable = [Executable(SCRIPT_NAME, base=base)]
 includeFiles = [
-    "Resources"
+    "Resources",
+    "PVRTexToolCLI.exe"
 ]
 
 setup(

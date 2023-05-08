@@ -3,7 +3,7 @@ import customtkinter
 customtkinter.set_appearance_mode("dark")  # system (default), light, dark
 customtkinter.set_default_color_theme("blue")  # blue (default), dark-blue, green
 
-import WoTBTextureConverterPY as TextureConverter
+import TextureConverterPY as TextureConverter
 
 def TextureConverterExec():
     TextureConverter.ARGS = {
@@ -16,7 +16,7 @@ def TextureConverterExec():
     TextureConverter.TextureConverter()
 
 def SetAppWindowProperties(app):
-    app.title("WoTBTextureConverterPY")
+    app.title("TextureConverterPY")
     app.geometry("420x180")
     app.resizable(False,False)
     app.iconbitmap(os.path.abspath("Resources/icon.ico"))
