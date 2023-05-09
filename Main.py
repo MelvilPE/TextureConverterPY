@@ -20,6 +20,7 @@ def SetAppWindowProperties(app):
     app.geometry("420x180")
     app.resizable(False,False)
     app.iconbitmap(os.path.abspath("Resources/icon.ico"))
+    app.eval('tk::PlaceWindow . center')
     return app
 
 # Main part of this file is configuring window, and running it
